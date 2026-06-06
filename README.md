@@ -1,26 +1,46 @@
-# Website Security Checker
+# 🛡️ Website Security Checker
 
-Website Security Checker adalah aplikasi Python berbasis Streamlit untuk memeriksa konfigurasi keamanan dasar pada sebuah website.
+Website Security Checker adalah aplikasi berbasis Python dan Streamlit yang digunakan untuk memeriksa konfigurasi keamanan dasar pada sebuah website.
 
-Project ini dibuat sebagai portofolio cyber security dasar dengan pendekatan pemeriksaan pasif, seperti HTTPS, SSL certificate, dan security headers.
+Project ini dibuat sebagai portofolio Cyber Security dengan pendekatan **passive security assessment**, seperti pemeriksaan HTTPS, SSL Certificate, dan Security Headers tanpa melakukan eksploitasi atau pengujian invasif terhadap target.
 
-## Fitur
+---
 
-- Cek penggunaan HTTPS
-- Cek SSL certificate
-- Cek masa berlaku SSL
-- Cek HTTP status code
-- Cek security headers:
-  - Content-Security-Policy
-  - Strict-Transport-Security
+## 📷 Preview
+
+### Home Page
+
+![Home Page](assets/home.png)
+
+### Security Analysis
+
+![Security Analysis](assets/analysis.png)
+
+### Security Headers & Recommendations
+
+![Security Headers](assets/headers.png)
+
+---
+
+## ✨ Features
+
+- HTTPS Detection
+- SSL Certificate Validation
+- SSL Expiration Check
+- HTTP Status Code Analysis
+- Security Headers Inspection:
+  - Content-Security-Policy (CSP)
+  - Strict-Transport-Security (HSTS)
   - X-Frame-Options
   - X-Content-Type-Options
   - Referrer-Policy
   - Permissions-Policy
-- Security score sederhana
-- Rekomendasi perbaikan
+- Security Score Calculation
+- Security Improvement Recommendations
 
-## Tech Stack
+---
+
+## 🛠️ Tech Stack
 
 - Python
 - Streamlit
@@ -28,47 +48,100 @@ Project ini dibuat sebagai portofolio cyber security dasar dengan pendekatan pem
 - SSL
 - Socket
 
-## Cara Menjalankan
+---
 
-1. Clone repository
+## 📂 Project Structure
 
-```bash
-git clone https://github.com/username/website-security-checker.git
+```text
+website-security-checker/
+│
+├── assets/
+│   ├── home.png
+│   ├── analysis.png
+│   └── headers.png
+│
+├── app.py
+├── requirements.txt
+├── README.md
+└── .gitignore
 ```
 
-2. Masuk ke folder project
+---
+
+## 🚀 Installation
+
+Clone repository:
+
+```bash
+git clone https://github.com/Naufalganta/website-security-checker.git
+```
+
+Masuk ke folder project:
 
 ```bash
 cd website-security-checker
 ```
 
-3. Install dependencies
+Buat virtual environment:
+
+```bash
+python3 -m venv venv
+```
+
+Aktifkan virtual environment:
+
+```bash
+source venv/bin/activate
+```
+
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Jalankan aplikasi
+Jalankan aplikasi:
 
 ```bash
 streamlit run app.py
 ```
 
-## Contoh Penggunaan
+---
 
-Masukkan domain atau URL:
+## 📋 Example Usage
+
+Masukkan URL atau domain website:
 
 ```text
 example.com
 ```
 
-Aplikasi akan menampilkan hasil pemeriksaan HTTPS, SSL, security headers, score, dan rekomendasi.
+Aplikasi akan melakukan:
 
-## Catatan Etika
+1. Pemeriksaan HTTPS
+2. Validasi SSL Certificate
+3. Analisis Security Headers
+4. Perhitungan Security Score
+5. Pemberian rekomendasi keamanan
 
-Tool ini hanya melakukan pemeriksaan pasif terhadap konfigurasi website. Gunakan hanya pada website milik sendiri, website lab, atau website yang memang diizinkan untuk diuji.
+---
 
-## Pengembang
+## 🔒 Ethical Use
 
-Naufal Ganta  
-Python Developer | Web Developer | Cyber Security Enthusiast
+Tool ini hanya melakukan pemeriksaan pasif terhadap konfigurasi website dan tidak melakukan eksploitasi maupun perubahan terhadap sistem target.
+
+Gunakan hanya pada:
+
+- Website milik sendiri
+- Lingkungan lab/praktikum
+- Website yang memang memberikan izin untuk diuji
+
+---
+
+## 👨‍💻 Developer
+
+**Naufal Ganta**
+
+Python Developer • Web Developer • Cyber Security Enthusiast
+
+GitHub: https://github.com/Naufalganta
